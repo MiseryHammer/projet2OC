@@ -120,14 +120,15 @@ header {
     border: 1px solid transparent; 
     transition: border-color 0.3s; 
     padding-top: 17px;
-
+    padding-left: 69px;
+    
 }
 .menu-hebergements:hover, 
 .menu-activites:hover {
    text-decoration: none;
    color: #0065FC;
    border-top-color: #0065FC;
-   
+  
 }
 
 
@@ -304,7 +305,9 @@ input{
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     box-sizing: border-box;
 }
 
@@ -318,7 +321,7 @@ input{
     justify-content: space-between;
     align-items: center;    
     font-size: 22px;
-    margin-left: 30px;
+    
    
 }
 
@@ -385,7 +388,8 @@ input{
     height: 21px;
     size: 18px;
     font-weight: bold;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     
 }
 
@@ -517,8 +521,14 @@ margin-top: -10px;
 
 /***************** footer*************/
 footer{
+
+    width: 1340px;;
+    height: 163px;
+
+
     width: 1,340px;
     height: 163px;
+
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-between
@@ -547,13 +557,13 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /******* hebergements populaires********/
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
-        width: 100%;
-    }
+    /******** populaires*************/
+    
 
     .populaires {
         width: 100%;
@@ -571,22 +581,49 @@ footer{
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
 
 
 
+    /********** hebergements********/
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .hebergements-card {
+        width: 268px;
+        height: 207.25px;
+        padding: 0px 0px 15px 0px;
+        border-radius: 20px;
+        gap: 4px;
+        
+    }
+    .hebergements-title{
+        margin-top: 10px;
+        
+    }
+
+    /******* activites ********/
+    
+
+ 
+
+
 
 
 
     
-    
+  
     
 }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
