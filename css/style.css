@@ -120,16 +120,16 @@ header {
     border: 1px solid transparent; 
     transition: border-color 0.3s; 
     padding-top: 17px;
-    padding-left: 68px;
+    padding-left: 69px;
+    
 }
 .menu-hebergements:hover, 
 .menu-activites:hover {
    text-decoration: none;
    color: #0065FC;
    border-top-color: #0065FC;
-   
+  
 }
-
 
 
 /************ info group*************/
@@ -388,8 +388,9 @@ input{
     height: 21px;
     size: 18px;
     font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
 
 .rectangle-card .description-hotel{
@@ -451,7 +452,7 @@ input{
 .section-activite{
     width: 1340px;
     height: 559.02px;
-    padding-left: 30px;
+    padding: 30px;
     gap: 30px;
         
 }
@@ -520,7 +521,12 @@ margin-top: -10px;
 
 /***************** footer*************/
 footer{
+
     width: 1340px;;
+    height: 163px;
+
+
+    width: 1,340px;
     height: 163px;
 
     background-color: #F2F2F2;
@@ -558,7 +564,7 @@ footer{
 
     /******** populaires*************/
     
-s
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -581,6 +587,7 @@ s
     .populaires-cards .card-subtitle {
         font-size: 14px;
     }
+
 
 
     /********** hebergements********/
@@ -606,6 +613,13 @@ s
     
 
  
+
+
+
+
+
+    
+  
     
 }
 
