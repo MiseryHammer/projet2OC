@@ -615,10 +615,9 @@ footer{
     justify-items: start;
 
 }
-.submit::after {
-    content:url ("../images/logo/magnifying-glass-solid.svg");
+button::after {
+    content: "Rechercher";
 }
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -825,6 +824,9 @@ body{
     .populaires-cards{
         display: block;
         flex-direction: column;
+    }
+    button::after{
+        content: url("../images/logo/loupe.svg");
     }
 }
     
