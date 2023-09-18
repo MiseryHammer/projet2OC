@@ -72,6 +72,8 @@ a {
 }
 
 
+
+
 /******** head *********/
 header {
     display: flex;
@@ -352,7 +354,11 @@ input{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-
+    flex-wrap: wrap;
+    display: inline-flex;
+    gap: 30px;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .hebergements-title {
@@ -364,15 +370,15 @@ input{
     width: 811px;
     height: 26px;
     font-weight: 700;
-    margin-bottom: 30px;
+    
 }
 
-.hebergements-top,
-.hebergements-bot {
+.hebergements-top {
     width:811px;
     height: 207px;
     gap: 30px;
     display: inline-flex;
+    
     align-items: baseline;
     justify-content: center;
     margin-bottom: 30px;
@@ -609,9 +615,9 @@ footer{
     justify-items: start;
 
 }
-
-
-
+button::after {
+    content: "Rechercher";
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -791,14 +797,39 @@ body{
     padding: 0px 20px 0px 20px;
     gap: 35px;
 }
-    .headline {
-        width: 375px;
-        height: 432px;
-        padding: 0px 20px 0px 20px;
-        gap: 35px;
+.headline {
+    width: 375px;
+    height: 432px;
+    padding: 0px 20px 0px 20px;
+    gap: 35px;
     }
 
+   
+    .filter-bar{
+        display: block;
+    }
+
+
+
+    .hebergements{
+       background-color: transparent!important;
+    }
+
+    .hebergements-and-populaires  {
+        background-color: transparent ;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .populaires-cards{
+        display: block;
+        flex-direction: column;
+    }
+    button::after{
+        content: url("../images/logo/loupe.svg");
+    }
 }
+    
 
 
 
